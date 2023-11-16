@@ -12,6 +12,8 @@ echo str_word_count($name);
 echo "<br>";
 echo strrev($name);
 echo "<br>";
+echo str_replace("Indrajeet" ,"Jeet", $name);
+echo "<br>";
 echo "<br>";
 
 $num = 3445; //integer
@@ -46,3 +48,32 @@ $x = "hello";
 $x = null;
 echo $x;
 var_dump($x);
+echo "<br>";
+echo "<br>";
+
+
+//Maths
+
+$pi = pi();
+echo $pi;
+echo "<br>";
+$number = array(10, -20, 100,200);
+echo min($number);
+echo "<br>";
+echo max($number);
+echo "<br>";
+$abs = -12.400;
+echo abs($abs);
+echo "<br>";
+echo sqrt(64);
+echo "<br>";
+echo rand(1,100);
+echo "<br>";
+define("name", "this is me indrajeet!!");
+echo name;
+echo "<br>";
+const Name = "Indrajeet";
+echo Name;
+
+
+
