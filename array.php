@@ -51,3 +51,42 @@ $count = count($age);
     }
     ?>
 </table>
+
+
+<!-- sort in array -->
+<br>
+<?php
+
+$studentName = array("rahul","ajay","vikas","raj");
+sort($studentName);
+$length = count($studentName);
+for($i = 0;$i < $length; $i++){
+    echo $studentName[$i]."<br>";
+    
+}
+echo "<br>";
+rsort($studentName);
+$length = count($studentName);
+for($i = 0;$i < $length; $i++){
+    echo $studentName[$i]."<br>";
+    
+}
+echo "<br>";
+
+$emp = array("raj"=>"24","vimal"=>"21","ajay"=>"25");
+asort($emp);
+foreach($emp as $key => $value){
+    echo $key." => ".$value;
+    echo "<br>";
+
+}
+echo "<br>";
+ksort($emp);
+foreach($emp as $key => $value){
+    echo $key ." => ".$value;
+    echo "<br>";
+}
+
+echo "<br>";
+
+?>
